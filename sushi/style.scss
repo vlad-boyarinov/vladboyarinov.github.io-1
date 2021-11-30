@@ -1,0 +1,203 @@
+@import url(nullstyle.css);
+
+body._lock {
+    overflow: hidden;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.sushi__header {
+    display: flex;
+    padding: 28px 58px 28px 64px;
+    align-items: center;
+    background-color: #e59090;
+
+    &__logo-img {
+        width: 194px;
+        height: 24px;
+        margin: 0 378px 0 0;
+    }
+
+    &__burger-menu {
+        display: none;
+    }
+
+    &__menu {
+        display: flex;
+
+        &__item {
+            margin: 0 48px 0 0;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+
+    &__search-img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+}
+
+.first__section {
+    background-image: url('/img/b-g_section_1.png');
+    height: 796px;
+    padding-top: 176px;
+
+    &__title {
+        color: #ffffff;
+        font-size: 125px;
+        font-weight: 700;
+        margin: 0 0 69px 51px;
+    }
+
+    &__txt {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0 778px 52px 50px;
+    }
+
+    &__btn {
+        display: block;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 322px;
+        height: 65px;
+        border-radius: 33px;
+        background-color: #6db3ab;
+        margin: 0 0 154px 56px;
+    }
+}
+
+
+
+
+@media (max-width: 575px) {
+    .container {
+        width: 555px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sushi__header {
+        padding-left: 0;
+        padding-right: 0;
+
+
+
+        &__burger-menu {
+            z-index: 5;
+            display: block;
+            position: fixed;
+            width: 30px;
+            height: 18px;
+            cursor: pointer;
+            margin-left: 200px;
+
+        }
+
+        &__logo-img {
+            width: 140px;
+            height: 20px;
+            margin: 0;
+            z-index: 10;
+            margin-left: 50px;
+            position: fixed;
+        }
+
+
+        &__menu {
+
+            position: fixed;
+            top: 0px;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            padding: 100px 30px 30px 30px;
+            transition: left 0.3s ease 0s;
+            display: block;
+            margin: 0;
+
+            &._active {
+                left: 0;
+            }
+
+
+            &::before {
+                content: "";
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 86px;
+                background-color: #e59090;
+                height: 50px;
+
+            }
+
+            &__item {
+                font-size: 25px;
+                color: black;
+                margin: 0;
+            }
+
+        }
+
+        &__search-img {
+            display: none;
+        }
+    }
+
+    // \\\\\\
+    .first__section {
+        background-image: url('b-g_section_1_mob.png');
+        padding-top: 120px;
+        height: 600px;
+        background-repeat: no-repeat;
+
+        &__title {
+            color: #ffffff;
+            font-size: 62px;
+            font-weight: 700;
+            margin: 0;
+            margin: 0 0 35px 35px;
+        }
+
+        &__txt {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+            margin: 0 60px 40px 30px;
+
+        }
+
+        &__btn {
+            display: block;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            width: 322px;
+            height: 65px;
+            border-radius: 33px;
+            background-color: #6db3ab;
+            margin: 0;
+            margin: 0 0 0 20px;
+        }
+    }
+}
