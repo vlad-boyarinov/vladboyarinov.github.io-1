@@ -1,8 +1,4 @@
 @import url(nullstyle.css);
-body._lock {
-  overflow: hidden;
-}
-
 .container {
   width: 100%;
   max-width: 1440px;
@@ -14,7 +10,7 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 28px 58px 28px 64px;
+  padding: 22px 58px 28px 64px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -82,6 +78,206 @@ body._lock {
   margin: 0 0 154px 56px;
 }
 
+.oriental_sushi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 186px 0 0 163px;
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+  background-color: #fff;
+}
+
+.oriental_sushi__img {
+  width: 465px;
+  height: 464px;
+}
+
+.oriental_sushi__vector1 {
+  position: absolute;
+  top: -78px;
+  left: 0;
+}
+
+.oriental_sushi__vector2 {
+  position: absolute;
+  top: 0;
+  left: 497px;
+}
+
+.oriental_sushi__vector3 {
+  position: absolute;
+  top: 525px;
+  left: 35px;
+}
+
+.oriental_sushi__vector4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.oriental_sushi__info {
+  margin: 54px 0 0 114px;
+}
+
+.oriental_sushi__title {
+  color: #2fb4ac;
+  font-size: 75px;
+  font-weight: 700;
+  margin: 0 133px 59px 0;
+}
+
+.oriental_sushi__txt {
+  color: #2fb4ac;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 86px 73px 0;
+}
+
+.oriental_sushi__btn {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 322px;
+  height: 65px;
+  border-radius: 33px;
+  background-color: #e59090;
+}
+
+.special__menu {
+  background-color: #e59090;
+  height: 796px;
+  padding-top: 152px;
+  position: relative;
+  width: 1440px;
+}
+
+.special__menu__vector5 {
+  position: absolute;
+  top: 71px;
+  left: 0px;
+}
+
+.special__menu__vector6 {
+  position: absolute;
+  top: 74px;
+  right: 0;
+}
+
+.special__menu__title {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0 503px 104px 488px;
+}
+
+.special__menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.special__menu__item:first-child {
+  margin-left: 239px;
+}
+
+.special__menu__item__title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 25px 0 27px 50px;
+}
+
+.special__menu__item__txt {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 34px 0 0;
+}
+
+.statistics {
+  padding-top: 90px;
+  position: relative;
+  height: 800px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.statistics__vector6 {
+  position: absolute;
+  top: 90px;
+  left: -13px;
+}
+
+.statistics__vector7 {
+  position: absolute;
+  top: 37px;
+  right: 0;
+}
+
+.statistics__vector9 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.statistics__vector8 {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+}
+
+.statistics__title {
+  color: #2fb4ac;
+  font-size: 62px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.statistics__txt {
+  color: #2fb4ac;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin: 48px 373px 90px 365px;
+}
+
+.statistics__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.statistics__item {
+  position: relative;
+  width: 274px;
+  height: 275px;
+  border: 5px solid #fd9191;
+  border-radius: 50%;
+}
+
+.statistics__item__number {
+  position: absolute;
+  color: #2fb4ac;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  top: 25%;
+}
+
+.statistics__item__txt {
+  color: #2fb4ac;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+
 @media (max-width: 575px) {
   .container {
     width: 555px;
@@ -93,13 +289,13 @@ body._lock {
     padding-right: 0;
   }
   .sushi__header__burger-menu {
-    z-index: 5;
+    z-index: 6;
     display: block;
     position: fixed;
-    width: 30px;
-    height: 18px;
+    width: 40px;
+    height: 25px;
     cursor: pointer;
-    margin-left: 200px;
+    margin: 3px 0 0 480px;
   }
   .sushi__header__logo-img {
     width: 140px;
@@ -110,6 +306,7 @@ body._lock {
     position: fixed;
   }
   .sushi__header__menu {
+    z-index: 5;
     position: fixed;
     top: 0px;
     left: -100%;
@@ -137,8 +334,16 @@ body._lock {
   }
   .sushi__header__menu__item {
     font-size: 25px;
-    color: black;
+    color: #2fb4ac;
     margin: 0;
+    line-height: 50px;
+  }
+  .sushi__header__menu__item:hover {
+    font-size: 26px;
+    color: #00b1a5;
+  }
+  .sushi__header__menu__item:active {
+    color: #e59090;
   }
   .sushi__header__search-img {
     display: none;
@@ -169,12 +374,210 @@ body._lock {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    width: 322px;
-    height: 65px;
+    width: 280px;
+    height: 55px;
     border-radius: 33px;
     background-color: #6db3ab;
     margin: 0;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 25px;
+  }
+  .oriental_sushi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    padding: 150px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    background-color: #fff;
+  }
+  .oriental_sushi__img {
+    width: 200px;
+    height: 200px;
+    margin: 0 23px 0 35px;
+  }
+  .oriental_sushi__vector1 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 250px;
+    height: 100px;
+  }
+  .oriental_sushi__vector2 {
+    position: absolute;
+    top: 0;
+    left: 497px;
+    display: none;
+  }
+  .oriental_sushi__vector3 {
+    position: absolute;
+    top: 345px;
+    left: 0px;
+  }
+  .oriental_sushi__vector4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+  }
+  .oriental_sushi__info {
+    margin: 0;
+  }
+  .oriental_sushi__title {
+    color: #2fb4ac;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .oriental_sushi__txt {
+    color: #2fb4ac;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    margin: 20px 0 0 0;
+  }
+  .oriental_sushi__btn {
+    color: #ffffff;
+    width: 280px;
+    height: 55px;
+    border-radius: 33px;
+    background-color: #e59090;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .special__menu {
+    background-color: #e59090;
+    height: 1283px;
+    padding-top: 0;
+    position: relative;
+    width: 574px;
+    padding-top: 50px;
+  }
+  .special__menu__vector5 {
+    position: absolute;
+    top: 71px;
+    left: 0px;
+    display: none;
+  }
+  .special__menu__vector6 {
+    position: absolute;
+    top: 74px;
+    right: 0;
+    display: none;
+  }
+  .special__menu__title {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .special__menu__items {
+    display: block;
+    text-align: center;
+  }
+  .special__menu__item {
+    margin-bottom: 60px;
+  }
+  .special__menu__item:last-child {
+    margin-bottom: 60px;
+  }
+  .special__menu__item:first-child {
+    margin-left: 0px;
+  }
+  .special__menu__item__title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    margin: 10px 0 10px 0;
+  }
+  .special__menu__item__txt {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+    margin: 0 100px 0 100px;
+  }
+  .statistics {
+    padding-top: 50px;
+    position: relative;
+    height: 1283px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  .statistics__vector6 {
+    position: absolute;
+    top: 0px;
+    left: -195px;
+  }
+  .statistics__vector7 {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    display: none;
+  }
+  .statistics__vector9 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .statistics__vector8 {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    display: none;
+  }
+  .statistics__title {
+    color: #2fb4ac;
+    font-size: 62px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .statistics__txt {
+    color: #2fb4ac;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin: 0 30px 35px 30px;
+  }
+  .statistics__items {
+    display: block;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .statistics__item {
+    position: relative;
+    width: 274px;
+    height: 275px;
+    border: 5px solid #fd9191;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 150px 40px 150px;
+  }
+  .statistics__item:last-child {
+    margin-bottom: 0;
+  }
+  .statistics__item__number {
+    position: absolute;
+    color: #2fb4ac;
+    font-size: 65px;
+    font-weight: 700;
+    top: 25%;
+  }
+  .statistics__item__txt {
+    text-align: center;
+    color: #2fb4ac;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

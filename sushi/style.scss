@@ -1,11 +1,5 @@
 @import url(nullstyle.css);
 
-body._lock {
-    overflow: hidden;
-}
-
-
-
 .container {
     width: 100%;
     max-width: 1440px;
@@ -16,7 +10,7 @@ body._lock {
 
 .sushi__header {
     display: flex;
-    padding: 28px 58px 28px 64px;
+    padding: 22px 58px 28px 64px;
     align-items: center;
     background-color: #e59090;
 
@@ -82,7 +76,207 @@ body._lock {
     }
 }
 
+.oriental_sushi {
+    display: flex;
+    padding: 186px 0 0 163px;
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    background-color: #fff;
 
+
+    &__img {
+        width: 465px;
+        height: 464px;
+    }
+
+    &__vector1 {
+        position: absolute;
+        top: -78px;
+        left: 0;
+    }
+
+    &__vector2 {
+        position: absolute;
+        top: 0;
+        left: 497px;
+    }
+
+    &__vector3 {
+        position: absolute;
+        top: 525px;
+        left: 35px;
+    }
+
+    &__vector4 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__info {
+
+        margin: 54px 0 0 114px;
+    }
+
+    &__title {
+        color: #2fb4ac;
+        font-size: 75px;
+        font-weight: 700;
+        margin: 0 133px 59px 0;
+    }
+
+    &__txt {
+        color: #2fb4ac;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0 86px 73px 0;
+    }
+
+    &__btn {
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 322px;
+        height: 65px;
+        border-radius: 33px;
+        background-color: #e59090;
+    }
+}
+
+.special__menu {
+    background-color: #e59090;
+    height: 796px;
+    padding-top: 152px;
+    position: relative;
+    width: 1440px;
+
+    &__vector5 {
+        position: absolute;
+        top: 71px;
+        left: 0px;
+    }
+
+    &__vector6 {
+        position: absolute;
+        top: 74px;
+        right: 0;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-size: 64px;
+        font-weight: 700;
+        margin: 0 503px 104px 488px;
+    }
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        &:first-child {
+            margin-left: 239px;
+        }
+
+        &__img {}
+
+        &__title {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 25px 0 27px 50px;
+        }
+
+        &__txt {
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 400;
+            margin: 0 34px 0 0;
+        }
+    }
+}
+
+.statistics {
+    padding-top: 90px;
+    position: relative;
+    height: 800px;
+    background-color: #ffffff;
+    overflow: hidden;
+
+    &__vector6 {
+        position: absolute;
+        top: 90px;
+        left: -13px;
+    }
+
+    &__vector7 {
+        position: absolute;
+        top: 37px;
+        right: 0;
+    }
+
+    &__vector9 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__vector8 {
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+    }
+
+    &__title {
+        color: #2fb4ac;
+        font-size: 62px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__txt {
+        color: #2fb4ac;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        margin: 48px 373px 90px 365px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    &__item {
+        position: relative;
+        width: 274px;
+        height: 275px;
+        border: 5px solid #fd9191;
+        border-radius: 50%;
+
+        &__number {
+            position: absolute;
+            color: #2fb4ac;
+            font-size: 65px;
+            font-weight: 700;
+            text-align: center;
+            top: 25%;
+        }
+
+        &__txt {
+
+            color: #2fb4ac;
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block;
+
+        }
+    }
+}
 
 
 @media (max-width: 575px) {
@@ -99,13 +293,13 @@ body._lock {
 
 
         &__burger-menu {
-            z-index: 5;
+            z-index: 6;
             display: block;
             position: fixed;
-            width: 30px;
-            height: 18px;
+            width: 40px;
+            height: 25px;
             cursor: pointer;
-            margin-left: 200px;
+            margin: 3px 0 0 480px;
 
         }
 
@@ -120,7 +314,7 @@ body._lock {
 
 
         &__menu {
-
+            z-index: 5;
             position: fixed;
             top: 0px;
             left: -100%;
@@ -151,8 +345,18 @@ body._lock {
 
             &__item {
                 font-size: 25px;
-                color: black;
+                color: #2fb4ac;
                 margin: 0;
+                line-height: 50px;
+
+                &:hover {
+                    font-size: 26px;
+                    color: #00b1a5;
+                }
+
+                &:active {
+                    color: #e59090;
+                }
             }
 
         }
@@ -192,12 +396,255 @@ body._lock {
             font-size: 20px;
             font-weight: 700;
             text-transform: uppercase;
-            width: 322px;
-            height: 65px;
+            width: 280px;
+            height: 55px;
             border-radius: 33px;
             background-color: #6db3ab;
             margin: 0;
-            margin: 0 0 0 20px;
+            margin: 0 0 0 25px;
+        }
+    }
+
+    .oriental_sushi {
+        display: flex;
+        padding: 0;
+        padding: 150px 0 0 0;
+        position: relative;
+        overflow: hidden;
+        height: 600px;
+        background-color: #fff;
+
+
+        &__img {
+            width: 200px;
+            height: 200px;
+            margin: 0 23px 0 35px;
+
+        }
+
+        &__vector1 {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 250px;
+            height: 100px;
+
+        }
+
+        &__vector2 {
+            position: absolute;
+            top: 0;
+            left: 497px;
+            display: none;
+        }
+
+        &__vector3 {
+            position: absolute;
+            top: 345px;
+            left: 0px;
+
+        }
+
+        &__vector4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 100px;
+        }
+
+        &__info {
+            margin: 0;
+
+        }
+
+        &__title {
+            color: #2fb4ac;
+            font-size: 38px;
+            font-weight: 700;
+            margin: 0;
+
+        }
+
+        &__txt {
+            color: #2fb4ac;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+            margin: 20px 0 0 0;
+        }
+
+        &__btn {
+            color: #ffffff;
+            width: 280px;
+            height: 55px;
+            border-radius: 33px;
+            background-color: #e59090;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+    }
+
+    .special__menu {
+        background-color: #e59090;
+        height: 1283px;
+        padding-top: 0;
+        position: relative;
+        width: 574px;
+        padding-top: 50px;
+
+        &__vector5 {
+            position: absolute;
+            top: 71px;
+            left: 0px;
+            display: none;
+
+        }
+
+        &__vector6 {
+            position: absolute;
+            top: 74px;
+            right: 0;
+            display: none;
+        }
+
+        &__title {
+            color: #ffffff;
+            font-size: 50px;
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 40px;
+
+
+        }
+
+        &__items {
+            display: block;
+            text-align: center;
+        }
+
+        &__item {
+            margin-bottom: 60px;
+
+            &:last-child {
+                margin-bottom: 60px;
+            }
+
+            &:first-child {
+                margin-left: 0px;
+            }
+
+            &__img {}
+
+            &__title {
+                color: #ffffff;
+                font-size: 28px;
+                font-weight: 700;
+                margin: 0;
+                margin: 10px 0 10px 0;
+            }
+
+            &__txt {
+                color: #ffffff;
+                font-size: 17px;
+                font-weight: 400;
+                margin: 0;
+                margin: 0 100px 0 100px;
+            }
+        }
+    }
+
+    .statistics {
+        padding-top: 50px;
+        position: relative;
+        height: 1283px;
+        background-color: #ffffff;
+        overflow: hidden;
+
+        &__vector6 {
+            position: absolute;
+            top: 0px;
+            left: -195px;
+
+        }
+
+        &__vector7 {
+            position: absolute;
+            top: 37px;
+            right: 0;
+            display: none;
+        }
+
+        &__vector9 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+        }
+
+        &__vector8 {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            display: none;
+        }
+
+        &__title {
+            color: #2fb4ac;
+            font-size: 62px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+
+        }
+
+        &__txt {
+            color: #2fb4ac;
+            font-size: 25px;
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            margin: 0 30px 35px 30px;
+        }
+
+        &__items {
+            display: block;
+            justify-content: space-around;
+        }
+
+        &__item {
+            position: relative;
+            width: 274px;
+            height: 275px;
+            border: 5px solid #fd9191;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0px 150px 40px 150px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &__number {
+                position: absolute;
+                color: #2fb4ac;
+                font-size: 65px;
+                font-weight: 700;
+
+                top: 25%;
+            }
+
+            &__txt {
+                text-align: center;
+                color: #2fb4ac;
+                font-size: 42px;
+                font-weight: 700;
+                text-transform: uppercase;
+                display: block;
+
+            }
         }
     }
 }
