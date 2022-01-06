@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Docweb</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <a href="index.html"><svg class="logo__svg" id="SVGDoc" width="92" height="82"
+                    xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:avocode="https://avocode.com/" viewBox="0 0 92 82">
+                    <desc>Generated with Avocode.</desc>
+                    <g>
+                        <g>
+                            <title>Place Your Logo Here (Double Click to Edit)</title>
+                            <image
+                                xlink:href="data:image/png;base64,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"
+                                width="92" height="82" transform="matrix(1,0,0,1,0,0)"></image>
+                        </g>
+                    </g>
+                </svg></a>
+        </div>
+        <ul class="header__menu">
+            <a class="menu__item" href="">
+                <li class="menu__item">Home</li>
+            </a>
+            <a class="menu__item" href="">
+                <li class="menu__item">About</li>
+            </a>
+            <a class="menu__item" href="">
+                <li class="menu__item">Blog</li>
+            </a>
+            <a class="menu__item" href="">
+                <li class="menu__item">Training</li>
+            </a>
+            <a class="menu__item" href="">
+                <li class="menu__item">Event</li>
+            </a>
+            <a class="menu__item" href="">
+                <li class="menu__item">Shop</li>
+            </a>
+            <a class="menu__item" href="">
+                <li class="menu__item">Contact</li>
+            </a>
+        </ul>
+    </header>
+    <section class="first-section">
+        <div class="first-section__left-part">
+            <img class="first-section__left-part__shape" src="Shape-6.png" alt="">
+            <img class="first-section__left-part__floral" src="Floral.png" alt="">
+            <img class="first-section__left-part__fl2" src="Floral-2.png" alt="">
+            <img src="Shape-3.png" alt="" class="first-section__left-part__points">
+            <img class="first-section__left-part__img" src="Place_Your_Image_Here_(Double_Click_to_Edit).png"
+                alt="">
+        </div>
+        <div class="first-section__right-part">
+            <img src="Shape.png" alt="" class="first-section__right-part__shape">
+            <img src="Floral-3.png" alt="" class="first-section__right-part__floral">
+            <img src="Shape-2.png" alt="" class="first-section__right-part__points">
+            <h2 class="first-section__right-part__title">Balance Your
+                Body and Mind</h2>
+            <span class="first-section__right-part__txt">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</span>
+            <button class="first-section__right-part__btn">Join US Now</button>
+            <img class="first-section__right-part__brush" src="Brush.png" alt="">
+            <img class="first-section__right-part__floral_4" src="Floral-4.png" alt="">
+            <img class="first-section__right-part__shape_5" src="Shape-5.png" alt="">
+        </div>
+    </section>
+    <section class="second-section">
+        <h2 class="second-section_title">Pregnant
+            Women Program</h2>
+        <span class="second-section_txt">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</span>
+        <button class="second-section__btn">Join US Now</button>
+    </section>
+    <main class="main-content">
+        <div class="main-content__icone">
+            <div class="main-content__icone__picture">
+                <img src="Brush-2.png" alt="" class="main-content__icone__picture__b-g first">
+                <img src="Icon.png" alt="" class="main-content__icone__picture__img first">
+            </div>
+            <h3 class="main-content__icone__title">Program 1</h3>
+            <span class="main-content__icone__txt">sint occaecat cupidatat non proident</span>
+        </div>
+        <div class="main-content__icone">
+            <div class="main-content__icone__picture">
+                <img src="Brush-3.png" alt="" class="main-content__icone__picture__b-g third">
+                <img src="Icon-2.png" alt="" class="main-content__icone__picture__img third">
+            </div>
+            <h3 class="main-content__icone__title">Program 2</h3>
+            <span class="main-content__icone__txt">sint occaecat cupidatat non proident</span>
+        </div>
+        <div class="main-content__icone">
+            <div class="main-content__icone__picture">
+                <img src="Brush-3.png" alt="" class="main-content__icone__picture__b-g">
+                <img src="Icon-2.png" alt="" class="main-content__icone__picture__img">
+            </div>
+            <h3 class="main-content__icone__title">Program 3</h3>
+            <span class="main-content__icone__txt">sint occaecat cupidatat non proident</span>
+        </div>
+    </main>
+    <section class="third-section">
+        <div class="third-section__left-part">
+            <img class="third-section__left-part__shape" src="Shape-7.png" alt="">
+            <img class="third-section__left-part__floral" src="Floral-5.png" alt="">
+            <h2 class="third-section__left-part__title">Yoga Breathing
+                or Pranayama</h2>
+            <span class="third-section__left-part__txt">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</span>
+            <button class="third-section__left-part__btn">Join US Now</button>
+            <img class="third-section__left-part__brush" src="Brush-5.png" alt="">
+            <img class="third-section__left-part__floral1" src="Floral-6.png" alt="">
+        </div>
+        <div class="third-section__right-part">
+            <img src="Brush.png" alt="" class="third-section__right-part__brush">
+            <img src="Floral-8.png" alt="" class="third-section__right-part__floral">
+            <img src="Shape-9.png" alt="" class="third-section__right-part__shape9">
+            <img src="Floral-10.png" alt="" class="third-section__right-part__floral10">
+            <img class="third-section__right-part__img" src="Place_Your_Image_Here_(Double_Click_to_Edit)-3.png"
+                alt="">
+            <img class="third-section__right-part__floral11" src="Floral-11.png" alt="">
+            <img class="third-section__right-part__floral12" src="Floral-12.png" alt="">
+            <img class="third-section__right-part__shape10" src="Shape-10.png" alt="">
+        </div>
+    </section>
+    <section class="fourth-section">
+        <img class="fourth-section__brush" src="Brush-6.png" alt="">
+        <h2 class="fourth-section__title">Join Now and
+            Get 50% Off</h2>
+        <span class="fourth-section__txt">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</span>
+        <button class="fourth-section__btn">Join US Now</button>
+    </section>
+    <section class="fifth-section">
+        <img class="fifth-section__brush7" src="Brush-7.png" alt=""><img class="fifth-section__floral13"
+            src="Floral-13.png" alt="">
+        <img class="fifth-section__brush8" src="Brush-8.png" alt=""><img class="fifth-section__floral17"
+            src="Floral-17.png" alt="">
+
+        <img class="fifth-section__shape12" src="Shape-12.png" alt=""><img class="fifth-section__floral16"
+            src="Floral-16.png" alt=""><img class="fifth-section__shape13" src="/Shape-13.png" alt="">
+        <h3 class="fifth-section__title">Galery</h3>
+        <span class="fifth-section__txt">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl
+            tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </span>
+        <img class="fifth-section__shape11" src="Shape-11.png" alt=""><img class="fifth-section__floral15"
+            src="Floral-15.png" alt="">
+        <div class="fifth-section__block">
+            <div class="fifth-section__block__item">
+                <img src="Place_Your_Image_Here_(Double_Click_to_Edit)-6.png" alt=""
+                    class="fifth-section__block__item__img">
+                <h3 class="fifth-section__block__item__title">
+                    Facilis Gravida</h3>
+                <span class="fifth-section__block__item__txt">A lacus vestibulum sed. Amet purus gravida quis blandit
+                    turpis.</span>
+            </div>
+            <div class="fifth-section__block__item">
+                <img src="Place_Your_Image_Here_(Double_Click_to_Edit)-7.png" alt=""
+                    class="fifth-section__block__item__img">
+                <h3 class="fifth-section__block__item__title">
+                    Facilis Gravida</h3>
+                <span class="fifth-section__block__item__txt">A lacus vestibulum sed. Amet purus gravida quis blandit
+                    turpis.</span>
+            </div>
+            <div class="fifth-section__block__item">
+                <img src="Place_Your_Image_Here_(Double_Click_to_Edit)-8.png" alt=""
+                    class="fifth-section__block__item__img">
+                <h3 class="fifth-section__block__item__title">
+                    Facilis Gravida</h3>
+                <span class="fifth-section__block__item__txt">A lacus vestibulum sed. Amet purus gravida quis blandit
+                    turpis.</span>
+            </div>
+        </div>
+    </section>
+    <section class="video__section">
+        <div class="video__section__left">
+            <iframe class="video__section__left__video" width="627px" height="418"
+                src="https://www.youtube.com/embed/E5i4rDc_GA8?start=142" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video__section__right">
+            <h3 class="video__section__right__title">Yoga Training
+                Video Showreel</h3>
+            <span class="video__section__right__txt">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</span>
+            <div class="video__section__right__sprait">
+                <a href="https://vk.com/vlad_boyarinov" class="video__section__right__sprait__item">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="video__section__right__sprait__item__svg" id="SVGDoc" width="11" height="22"
+                        xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:avocode="https://avocode.com/">
+                        <defs></defs>
+                        <desc>Generated with Avocode.</desc>
+                        <g>
+                            <g>
+                                <title>Shape</title>
+                                <path
+                                    d="M8.78942,3.82711h1.86356v0v-3.41515c-0.32084,-0.0462 -1.42719,-0.1509 -2.71508,-0.1509c-2.68796,0 -4.5286,1.77799 -4.5286,5.04634v3.00754v0h-2.96588v0v3.81754v0h2.96588v0v9.60571v0l3.63596,0.00075v0v-9.60533v0h2.84632v0l0.45216,-3.81792v0h-3.29847v0v-2.6301c0,-1.10323 0.28213,-1.85847 1.74417,-1.85847z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://vk.com/vlad_boyarinov" class="video__section__right__sprait__item">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="video__section__right__sprait__item__svg" id="SVGDoc" width="23" height="24"
+                        xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:avocode="https://avocode.com/">
+                        <defs></defs>
+                        <desc>Generated with Avocode.</desc>
+                        <g>
+                            <g>
+                                <title>Shape</title>
+                                <path
+                                    d="M16.93681,11.98901c0,3.19905 -2.5284,5.7945 -5.65084,5.7945c-3.11977,0 -5.65058,-2.59247 -5.65058,-5.7945c0,-3.19979 2.52806,-5.7945 5.65058,-5.7945c3.11969,0 5.65084,2.59247 5.65084,5.7945zM14.9542,11.98901c0,-2.07793 -1.6416,-3.76203 -3.66823,-3.76203c-2.02655,0 -3.66806,1.6841 -3.66806,3.76203c0,2.07793 1.64151,3.76165 3.66806,3.76165c2.02663,0 3.66823,-1.68373 3.66823,-3.76165zM22.22424,7.3365c0.09038,2.07979 0.0951,7.22561 0,9.3054c-0.15098,3.35665 -1.69026,5.2263 -3.73029,6.03929c-1.50023,0.5954 -2.96451,0.59279 -7.20798,0.59279c-4.13627,0 -7.03168,0.28615 -9.15745,-1.89387c-2.0856,-2.1394 -1.84682,-4.99828 -1.84682,-9.3911c0,-4.29259 -0.27105,-7.21928 1.84682,-9.3911c1.26703,-1.29922 2.83894,-1.74073 4.62087,-1.82643c2.02792,-0.09203 7.04687,-0.09725 9.07316,0c4.14494,0.1971 6.22015,2.60104 6.40168,6.56501zM20.30772,11.98901c0,-3.01312 -0.01184,-3.37044 -0.06412,-4.56086c-0.23046,-5.21885 -4.06717,-4.69275 -8.95763,-4.69275l-0.0412,-0.02832c-2.94279,0 -3.28671,0.01379 -4.4559,0.05663c-5.08813,0.26752 -4.56774,4.01241 -4.56774,9.21114c0,3.84213 -0.28024,6.37611 1.26643,7.95477c1.34274,1.38081 3.1826,1.31151 7.77085,1.31151c4.45676,0 6.38271,0.12668 7.77102,-1.29698c1.36497,-1.40689 1.27828,-3.30486 1.27828,-7.95514zM18.48107,5.96574c0,0.74779 -0.59249,1.35361 -1.32051,1.35361c-0.72913,0 -1.32068,-0.60732 -1.32068,-1.35361c0,-0.74667 0.59249,-1.35361 1.32068,-1.35361c0.72699,-0.00075 1.32051,0.60695 1.32051,1.35361z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://vk.com/vlad_boyarinov" class="video__section__right__sprait__item">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="video__section__right__sprait__item__svg" id="SVGDoc" width="23" height="20"
+                        xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:avocode="https://avocode.com/">
+                        <defs></defs>
+                        <desc>Generated with Avocode.</desc>
+                        <g>
+                            <g>
+                                <title>Shape</title>
+                                <path
+                                    d="M20.68939,5.58203c0.91787,-0.66544 1.68992,-1.49632 2.31897,-2.45275v-0.00075c-0.83977,0.37557 -1.73301,0.6252 -2.6659,0.74592c0.95907,-0.58496 1.69172,-1.50414 2.03599,-2.6111c-0.89436,0.54398 -1.88167,0.92886 -2.93412,1.14422c-0.84912,-0.92402 -2.05934,-1.49557 -3.3795,-1.49557c-2.56162,0 -4.62379,2.12338 -4.62379,4.72629c0,0.37408 0.03098,0.734 0.1072,1.07715c-3.84607,-0.19226 -7.2502,-2.0742 -9.53716,-4.94276c-0.39877,0.70755 -0.63377,1.51681 -0.63377,2.38867c0,1.63566 0.82466,3.08615 2.05564,3.92634c-0.74389,-0.01453 -1.47268,-0.23548 -2.09049,-0.58236c0,0.01416 0,0.03316 0,0.05216c0,2.29589 1.6034,4.20317 3.70694,4.64283c-0.37714,0.10619 -0.78724,0.15611 -1.21313,0.15611c-0.2962,0 -0.59506,-0.01788 -0.87547,-0.08048c0.59918,1.87002 2.30121,3.24636 4.32295,3.29145c-1.57422,1.25711 -3.57339,2.01459 -5.73718,2.01459c-0.37894,0 -0.74286,-0.01751 -1.10687,-0.06409c2.05007,1.34877 4.47804,2.12003 7.09785,2.12003c8.16482,0 13.48658,-6.95623 13.15184,-14.05591z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="last__section">
+        <img class="last__section__30" src="30.png" alt="">
+        <img class="last__section__31" src="31.png" alt="">
+        <img class="last__section__32" src="32.png" alt="">
+        <img class="last__section__33" src="33.png" alt="">
+        <img class="last__section__34" src="34.png" alt="">
+        <img class="last__section__35" src="35.png" alt="">
+        <img class="last__section__36" src="36.png" alt="">
+        <img class="last__section__37" src="37.png" alt="">
+        <img class="last__section__38" src="38.png" alt="">
+        <img class="last__section__39" src="39.png" alt="">
+        <form class="last__section__form" action="">
+            <h3 class="last__section__form__title">Get in Touch</h3>
+            <h5 class="last__section__form__txt">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl
+                tincidunt. ut placerat orci nulla pellentesque dignissim enim sit. </h5>
+            <input placeholder="Your Name" type="text" class="last__section__form__name">
+            <input placeholder="Gender" type="text" class="last__section__form__gender">
+            <input placeholder="Messages" type="textarea" class="last__section__form__message">
+            <button class="last__section__form__btn">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer__address">
+            <h3 class="footer__address_company">Your Company</h3>
+            <h5 class="footer__address_local">
+                Halimun Street 25
+                Jakarta, Indonesia
+                12850</h5>
+            <h5 class="footer__address_site">www.yourdomain.com</h5>
+        </div>
+        <div class="footer__sitemap">
+            <h4 class="footer__sitemap__header">Sitemap</h4>
+            <ul class="footer__sitemap_ul">
+                <li class="footer__sitemap_item"><a class="footer__sitemap_a" href="">Home</a></li>
+                <li class="footer__sitemap_item"><a class="footer__sitemap_a" href="">About</a></li>
+                <li class="footer__sitemap_item"><a class="footer__sitemap_a" href="">Blog</a></li>
+                <li class="footer__sitemap_item"><a class="footer__sitemap_a" href="">Menu</a></li>
+                <li class="footer__sitemap_item"><a class="footer__sitemap_a" href="">Store</a></li>
+                <li class="footer__sitemap_item"><a class="footer__sitemap_a" href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer__lorem">
+            <h4 class="footer__lorem__header">Lorem Ipsum</h4>
+            <ul class="footer__lorem_ul">
+                <li class="footer__lorem_item"><a class="footer__lorem_a" href="">Neque</a></li>
+                <li class="footer__lorem_item"><a class="footer__lorem_a" href="">Suspendisse</a></li>
+                <li class="footer__lorem_item"><a class="footer__lorem_a" href="">Dictum</a></li>
+                <li class="footer__lorem_item"><a class="footer__lorem_a" href="">Porttitor</a></li>
+                <li class="footer__lorem_item"><a class="footer__lorem_a" href="">Tincidunt</a></li>
+                <li class="footer__lorem_item"><a class="footer__lorem_a" href="">Enim lobortis</a></li>
+            </ul>
+        </div>
+        <div class="footer__sit">
+            <h4 class="footer__sit__header">Sit Amet</h4>
+            <ul class="footer__sit_ul">
+                <li class="footer__sit_item"><a class="footer__sit_a" href="">Neque</a></li>
+                <li class="footer__sit_item"><a class="footer__sit_a" href="">Suspendisse</a></li>
+                <li class="footer__sit_item"><a class="footer__sit_a" href="">Dictum</a></li>
+                <li class="footer__sit_item"><a class="footer__sit_a" href="">Porttitor</a></li>
+                <li class="footer__sit_item"><a class="footer__sit_a" href="">Tincidunt</a></li>
+                <li class="footer__sit_item"><a class="footer__sit_a" href="">Enim lobortis</a></li>
+            </ul>
+        </div>
+        <div class="footer__logo">
+            <img class="footer__logo_img" src="Place_Your_Logo_Here_(Double_Click_to_Edit).png" alt="">
+            <h5 class="footer__logo_copyright">Copyright © 2020 Freepik
+                Company S.L. All rights reserved.</h5>
+            <div class="footer__logo__sprait">
+
+                <a href="https://vk.com/vlad_boyarinov" class="footer__logo__sprait__item">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="footer__logo__sprait__item__svg" id="SVGDoc" width="7" height="14"
+                        xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:avocode="https://avocode.com/">
+                        <defs></defs>
+                        <desc>Generated with Avocode.</desc>
+                        <g>
+                            <g>
+                                <title>Shape</title>
+                                <path
+                                    d="M5.62061,2.74329h1.07941v0v-2.00155c-0.18582,-0.0272 -0.82664,-0.08868 -1.57259,-0.08868c-1.55688,0 -2.62299,1.04213 -2.62299,2.95761v1.76309v0h-1.7179v0v2.23739v0h1.7179v0v5.62981v0l2.10594,0.00075v0v-5.62981v0h1.64864v0l0.26187,-2.23777v0h-1.91051v0v-1.5414c0,-0.64719 0.16342,-1.08945 1.01023,-1.08945z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+
+                <a href="" class="footer__logo__sprait__item">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="footer__logo__sprait__item__svg" id="SVGDoc" width="14" height="14"
+                        xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:avocode="https://avocode.com/">
+                        <defs></defs>
+                        <desc>Generated with Avocode.</desc>
+                        <g>
+                            <g>
+                                <title>Shape</title>
+                                <path
+                                    d="M9.93866,6.94087c0,1.87524 -1.46444,3.39615 -3.27298,3.39615c-1.80699,0 -3.2729,-1.51942 -3.2729,-3.39615c0,-1.87524 1.46427,-3.39615 3.2729,-3.39615c1.80691,0 3.27298,1.51942 3.27298,3.39615zM8.79033,6.94087c0,-1.21799 -0.95083,-2.20461 -2.12465,-2.20461c-1.17382,0 -2.12457,0.98661 -2.12457,2.20461c0,1.21799 0.95075,2.20461 2.12457,2.20461c1.17382,0 2.12465,-0.98661 2.12465,-2.20461zM13.00119,4.2139c0.05236,1.21911 0.0551,4.23522 0,5.45395c-0.08746,1.96764 -0.97898,3.0638 -2.16062,3.53996c-0.86895,0.34912 -1.71704,0.34763 -4.17489,0.34763c-2.39579,0 -4.07284,0.16729 -5.30408,-1.11031c-1.20798,-1.25376 -1.06971,-2.92929 -1.06971,-5.50425c0,-2.51609 -0.15698,-4.23149 1.06971,-5.50425c0.73385,-0.76157 1.64434,-1.02015 2.67646,-1.07045c1.17459,-0.05403 4.08159,-0.05701 5.25524,0c2.40077,0.11513 3.60274,1.52463 3.70789,3.84772zM11.89114,6.94087c0,-1.76607 -0.00687,-1.97546 -0.03716,-2.67295c-0.13347,-3.05895 -2.35571,-2.75119 -5.18829,-2.75119l-0.02386,-0.01602c-1.70451,0 -1.90372,0.00782 -2.58093,0.03316c-2.94708,0.15686 -2.64565,2.35141 -2.64565,5.39881c0,2.25193 -0.16231,3.73706 0.73351,4.66257c0.77771,0.80889 1.84339,0.76828 4.50096,0.76828c2.58136,0 3.6969,0.07415 4.50105,-0.76008c0.79059,-0.82454 0.74038,-1.93672 0.74038,-4.66257zM10.83311,3.4106c0,0.43816 -0.34315,0.79324 -0.76484,0.79324c-0.42229,0 -0.76492,-0.35582 -0.76492,-0.79324c0,-0.43779 0.34315,-0.79324 0.76492,-0.79324c0.42109,-0.00037 0.76484,0.35545 0.76484,0.79324z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+
+                <a href="" class="footer__logo__sprait__item">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="footer__logo__sprait__item__svg" id="SVGDoc" width="14" height="12"
+                        xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:avocode="https://avocode.com/">
+                        <defs></defs>
+                        <desc>Generated with Avocode.</desc>
+                        <g>
+                            <g>
+                                <title>Shape</title>
+                                <path
+                                    d="M12.60725,3.35772c0.53164,-0.38973 0.97881,-0.8767 1.34316,-1.43745v-0.00037c-0.4864,0.2202 -1.00379,0.36625 -1.54409,0.43742c0.5555,-0.34278 0.97984,-0.88192 1.17923,-1.53097c-0.51799,0.31931 -1.08988,0.54472 -1.69945,0.67066c-0.49181,-0.54137 -1.19279,-0.87633 -1.95745,-0.87633c-1.48367,0 -2.67809,1.24445 -2.67809,2.76982c0,0.21983 0.01794,0.43071 0.06206,0.63154c-2.22765,-0.11252 -4.19935,-1.21538 -5.52398,-2.89688c-0.23097,0.41469 -0.3671,0.88937 -0.3671,1.39982c0,0.95904 0.47765,1.80892 1.19064,2.30148c-0.43087,-0.00857 -0.85299,-0.13786 -1.21081,-0.34129c0,0.0082 0,0.01937 0,0.03055c0,1.34579 0.92869,2.46356 2.14705,2.72139c-0.21844,0.06185 -0.45593,0.09128 -0.70261,0.09128c-0.17158,0 -0.3447,-0.01006 -0.50709,-0.04695c0.34701,1.09616 1.33286,1.90281 2.50385,1.92889c-0.91178,0.73698 -2.06972,1.18073 -3.32302,1.18073c-0.21947,0 -0.43027,-0.00969 -0.64107,-0.03763c1.18738,0.79101 2.59372,1.24258 4.11112,1.24258c4.7291,0 7.81154,-4.07686 7.61765,-8.23831z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
